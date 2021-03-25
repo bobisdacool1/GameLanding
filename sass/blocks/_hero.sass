@@ -1,0 +1,36 @@
+.hero
+    min-height: 120vh
+    width: 100%
+    display: flex
+    background: url("../img/hero/hero-bg.jpg") top -20vh center no-repeat
+    background-size: cover
+    background-color: #080A0B
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    justify-content: center
+    &__title
+        margin-bottom: 8px
+    &__button
+        margin-top: 30px
+    &__wrap
+        margin-top: 100px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__scrolldown
+        position: absolute
+        bottom: 4vh
+        right: 0
+        left: 0
+        margin: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 100px
+        text-decoration: none
+.scrolldown__description
+    color: #fff
+    +bold-os
+    margin-bottom: 10px

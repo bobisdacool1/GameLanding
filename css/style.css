@@ -1,4 +1,205 @@
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../font/OpenSans-Bold.eot");
+  src: url("../font/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../font/OpenSans-Bold.woff") format("woff"), url("../font/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../font/");
+  src: url("../font/?#iefix") format("embedded-opentype"), url("../font/OpenSans-Regular.woff") format("woff"), url("../font/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("../font/BebasNeueBold.eot");
+  src: url("../font/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../font/BebasNeueBold.woff") format("woff"), url("../font/BebasNeueBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  display: block;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.navbar__logo {
+  width: 55px;
+  height: 55px;
+  background: url("../img/navbar/navbar-logo.png") center center no-repeat;
+  background-size: contain;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 20px;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: .1em;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-switcher li, .lang-switcher__arrow-down {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.lang-switcher__eng {
+  margin-right: 8px;
+}
+
+.lang-switcher__arrow-down {
+  font-size: 25px;
+  display: block;
+  transform: scaleY(0.5);
+  padding: 15px 0;
+  padding-right: 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.platforms {
+  display: flex;
+}
+
+.platforms a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+}
+
+.platform__xbox {
+  background: url("../img/navbar/xbox-icon.png") center center no-repeat;
+  background-size: contain;
+}
+
+.platform__steam {
+  background: url("../img/navbar/steam-icon.png") center center no-repeat;
+  background-size: contain;
+}
+
+.hero {
+  min-height: 120vh;
+  width: 100%;
+  display: flex;
+  background: url("../img/hero/hero-bg.jpg") top -20vh center no-repeat;
+  background-size: cover;
+  background-color: #080A0B;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.hero__title {
+  margin-bottom: 8px;
+}
+
+.hero__button {
+  margin-top: 30px;
+}
+
+.hero__wrap {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__scrolldown {
+  position: absolute;
+  bottom: 4vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100px;
+  text-decoration: none;
+}
+
+.scrolldown__description {
+  color: #fff;
+  font-family: 'Open Sans Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'Bebas Neue Bold', sans-serif;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Bebas Neue Bold', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #fff;
+}
+
+.action-button {
+  background-color: #FFB548;
+  border: 0;
+  border-radius: 4px;
+  padding: 20px;
+  font-family: 'Open Sans Bold', sans-serif;
+  margin-bottom: 320px;
+}
+
+.action-button:hover {
+  cursor: pointer;
+}
+
+.action-button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

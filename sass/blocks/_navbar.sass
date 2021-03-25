@@ -1,0 +1,60 @@
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 45px 0
+    position: absolute
+    margin: 0 auto
+    left: 0
+    right: 0
+.navbar__logo
+    width: 55px
+    height: 55px
+    background: url("../img/navbar/navbar-logo.png") center center no-repeat
+    background-size: contain
+.navbar__link
+    text-decoration: none
+    color: #fff
+    text-transform: uppercase
+    margin: 0 20px
+    +bold-os
+    font-size: 14px
+    line-height: 16px
+    letter-spacing: .1em
+.navbar__right
+    display: flex
+    justify-content: space-between
+    align-items: center
+.lang-switcher li, .lang-switcher__arrow-down
+    list-style-type: none
+    text-transform: uppercase
+    +bold-os
+    font-size: 14px
+    color: #fff
+.lang-switcher
+    display: flex
+    align-items: center
+    margin-right: 15px
+    text-decoration: none
+.lang-switcher__eng
+    margin-right: 8px
+.lang-switcher__arrow-down
+    font-size: 25px
+    display: block
+    transform: scaleY(.5)
+    padding: 15px 0
+    padding-right: 22px
+    border-right: 1px solid rgba(#fff, .5)
+.platforms
+    display: flex
+    a
+        display: block
+        width: 30px
+        height: 30px
+        margin: 0 8px
+.platform__xbox
+    background: url("../img/navbar/xbox-icon.png") center center no-repeat
+    background-size: contain
+.platform__steam
+    background: url("../img/navbar/steam-icon.png") center center no-repeat
+    background-size: contain

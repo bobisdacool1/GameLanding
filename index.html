@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Game landing</title>
 </head>
+
 <body>
     <header class="header">
         <navbar class="navbar container">
@@ -22,9 +24,7 @@
             <div class="navbar__right">
                 <a class="lang-switcher" href="">
                     <li class="lang-switcher__eng">Eng</li>
-                    <span class="lang-switcher__arrow-down" href="">
-                        ˅
-                    </span>
+                    <span class="lang-switcher__arrow-down">˅</span>
                 </a>
                 <div class="platforms">
                     <a class="platform__xbox" href=""></a>
@@ -32,17 +32,35 @@
                 </div>
             </div>
         </navbar>
+        <hero class="hero">
+            <div class="hero__wrap container">
+                <h1 class="hero__title">Survive at all costs</h1>
+                <h2 class="hero__description">Experience new social battle royale game</h2>
+                <button class="hero__button action-button">Buy Now on Steam | $14.99</button>
+            </div>
+            <a class="hero__scrolldown scrolldown" href="">
+                <span class="scrolldown__description">The story</span>
+                <img src="img/hero/scrolldown.svg" class="scrolldown__button"></img>
+            </a>
+        </hero>
     </header>
-    <hero class="hero">
-        <div class="hero__wrap">
-            <h1 class="hero__title">Survive at all costs</h1>
-            <h2 class="hero__description">Experience new social battle royale game</h2>
-            <button class="hero__button action-button">Buy Now on Steam | $14.99</button>
-        </div>
-        <a class="hero__scrolldown scrolldown" href="">
-            <span class="scrolldown__description">The story</span>
-            <img src="img/hero/scrolldown.svg" class="scrolldown__button"></img >
-        </a>
-    </hero>
+    <main>
+        <section class="about">
+            <div class="container about__container">
+                <div class="about__wrap">
+                    <h2 class="about__subtitle">What is SOS?</h2>
+                    <h1 class="about__title">Social battle <br> royale game</h1>
+                    <p class="about__description">
+                        Each round, <b>you</b> and <b>15</b> other contestants compete to escape a deadly island filled with monsters. The trick is: <b>three</b> people can survive. Will you run solo or form friendships with others to escape? <br> <br> Making the right decisions could be the difference between <span>life and death.</span>
+                    </p>
+                </div>
+                <span class="about__decorative-line"></span>
+                <div class="slider">
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

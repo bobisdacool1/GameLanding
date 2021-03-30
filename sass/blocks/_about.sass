@@ -1,23 +1,19 @@
 .about
-    min-height: 80vh
     background-color: $dark
-    background: url("../img/about/about-bg.jpg") top center no-repeat
-    background-size: cover
-    padding-top: 220px
+    background: url("../img/about/about-bg.jpg") center no-repeat
+    background-size: auto
+    width: 100%
+    height: auto
     &::before
-        content: ""
-        position: absolute
-        top: 0
-        z-index: 2
-        width: 100%
-        height: 10vh
-        background: linear-gradient(rgba($dark, 1),rgba($dark, 0))
+    &::after
+        margin-bottom: -300px
     &__wrap
         display: flex
         flex-direction: column
         align-items: flex-start
         justify-content: center
         width: 47%
+        margin-right: 20px
     &__subtitle
         margin-bottom: 10px
     &__title
@@ -36,11 +32,57 @@
             text-decoration-thickness: 3px
     &__decorative-line
         position: absolute
+        z-index: 3
         margin-top: -15px
-        width: 40%
+        width: 710px
         height: 3px
         background-color: #ccc
+        border-radius: 6px
     &__container
         display: flex
-        justify-content: space-between
+        justify-content: center
         align-items: center
+        margin-bottom: 150px
+    .splide
+        width: 500px
+        height: 600px
+        margin: 0
+        padding: 0
+        &__slide__image
+            width: 500px
+            height: 600px
+            border-radius: 6px
+            margin: 0 auto
+        &__slide__1
+            background: url("../img/about/screenshot-1.jpg") top center no-repeat
+            background-size: cover
+        &__slide__2
+            background: url("../img/about/screenshot-2.jpg") top center no-repeat
+            background-size: cover
+        &__slide__3
+            background: url("../img/about/screenshot-3.jpg") top center no-repeat
+            background-size: cover
+        &__arrow--prev
+            display: none
+            background: rgba(#fff, 0)
+        &__arrow--next
+            right: -50px
+            height: 50px
+            width: 30px
+            border-radius: 7px
+            background: rgba(#fff, 0)
+        &__custom-arrow
+            width: 18px
+            height: 38px
+        &__pagination__page
+            width: 14px
+            height: 14px
+            background-color: transparent
+            border: 1px solid #fff
+            opacity: 1
+            margin: 0 25px
+            &.is-active
+                background-color: #fff
+                width: 14px
+                height: 14px
+                transform: scale(1)

@@ -2,7 +2,7 @@
     min-height: 100vh
     width: 100%
     display: flex
-    background: url("../img/hero/hero-bg.jpg") top -20vh center no-repeat
+    background: url("../img/hero/hero-bg.jpg") center center no-repeat
     background-size: cover
     background-color: $dark
     display: flex
@@ -36,9 +36,11 @@
     +bold-os
     margin-bottom: 10px
 .header
+    padding-bottom: 150px
     &::after
         content: ""
         position: absolute
+        bottom: 0
         z-index: 2
         width: 100%
         margin-top: -10vh

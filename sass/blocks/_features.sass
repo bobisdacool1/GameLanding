@@ -1,0 +1,60 @@
+.features
+    min-height: 960px
+    padding-top: 250px
+    background-color: $dark
+    background: url("../img/features/features-bg.jpg") top center no-repeat
+    background-size: cover
+    display: flex
+    justify-content: flex-end
+    &::before
+        content: ""
+        background: linear-gradient(rgba($dark, 1),rgba($dark, 0))
+        position: relative
+        display: flex
+        top: -250px
+        z-index: 2
+        width: 100%
+        height: 10vh
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        margin-left: 50px
+    &__subtitle
+        margin-bottom: 8px
+    &__title
+        margin-bottom: 70px
+    &__wrap
+        display: flex
+        justify-content: space-around
+        align-items: stretch
+    &__switch-wrap
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        margin-right: 25px
+.feature
+    color: $main
+    font-size: 36px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    +bold-bn
+    padding: 16px 0
+    &__description
+        display: none
+        font-size: 18px
+        margin-top: 8px
+        max-width: 360px
+        +regular
+        color: #fff
+        &--active
+            display: flex
+    &__switch
+        width: 1px
+        height: 14px
+        border-radius: 100%
+        outline: none
+        border: 1px solid #fff
+        background: transparent
